@@ -22,8 +22,4 @@ driver.find_element_by_id("txtUsername").send_keys("user")
 driver.find_element_by_id("btnLogin").click()
 assert "Password cannot be empty" in driver.page_source
 
-# Enter password and click on submit
-driver.refresh()
-driver.find_element_by_id("txtPassword").send_keys("user")
-driver.find_element_by_id("btnLogin").click()
-assert "Username cannot be empty" in driver.page_source
+
